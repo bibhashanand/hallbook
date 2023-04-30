@@ -1,0 +1,23 @@
+{
+  "name": "weapp",
+  "version": "1.0.0",
+  "description": "Instructions",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bibhashanand/hallbook.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bibhashanand/hallbook/issues"
+  },
+  "homepage": "https://github.com/bibhashanand/hallbook#readme",
+  "dependencies": {
+    "mysql2": "^3.2.4"
+  }
+}
