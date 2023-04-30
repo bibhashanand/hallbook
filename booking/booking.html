@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hall Booking</title>
+    <link rel="stylesheet" href="booking.css">
+</head>
+<body>
+    <h1>Hall Booking</h1>
+    <form>
+        <div>
+            <label for="eventName">Event Name:</label>
+            <input type="text" id="eventName" name="eventName">
+        </div>
+        <div>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email">
+        </div>
+        <div>
+            <label for="phone">Phone:</label>
+            <input type="tel" id="phone" name="phone">
+        </div>
+    
+        <div>
+            <label for="bookingDate">Booking Date:</label>
+            <input type="date" id="bookingDate" name="bookingDate">
+        </div>
+        <div>
+            <label for="eventTimeStart">Event Time Start:</label>
+            <input type="time" id="eventTimeStart" name="eventTimeStart">
+        </div>
+        <div>
+            <label for="eventTimeEnd">Event Time End:</label>
+            <input type="time" id="eventTimeEnd" name="eventTimeEnd">
+        </div>
+        <div>
+            <label for="hall">Hall:</label>
+            <select id="hall" name="hall">
+                <option value="">Select the hall</option>
+                <option value="A">Exploretorium</option>
+                <option value="B">Pulitzer hall</option>
+                <option value="C">Faraday hall</option>
+                <option value="D">Moon hall</option>
+                <option value="E">Einstein hall</option>
+                <option value="F">Pierre Jeanneret hall</option>
+                <option value="G">Sun hall</option>
+                <option value="H">Warren Buffett hall</option>
+                <option value="G">Plato hall</option>
+            </select>
+        </div>
+        <div>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message"></textarea>
+        </div>
+        <div>
+            <input type="submit" value="Submit">
+        </div>
+    </form>
+    <script src="booking.js"></script>
+</body>
+</html>
+
+<!-- test -->
