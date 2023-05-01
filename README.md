@@ -17,6 +17,15 @@ install mysql package -
 
 npm install mysql2
 
-create a js file for connection
+install express , dotenv and hbs for encryption
+
+npm i --nodemon
+npm i --save nodemon
+
+create a app.js file for connection
+
+add this -
+
+"start": "nodemon app.js" in package json
 
 
