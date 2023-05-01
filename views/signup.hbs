@@ -30,6 +30,13 @@
                     <i></i>
                 
                 </div>
+
+                  <div class="inputBox">
+                    <input type="password" required="required" id="confirmpassword" name="confirmpassword">
+                    <span>Confirm Password</span>
+                    <i></i>
+                
+                </div>
     
                 <div class="links">
                     <!-- <a href="#">Reset</a> -->
@@ -46,6 +53,10 @@
             </div>
              -->
         </div>
+
+        {{#if message }}
+            <h4 class="alert alert-danger mt-4">{{message}}</h4>
+        {{/if}}
     </div>
     <script src="signup.js"></script>
 </body>

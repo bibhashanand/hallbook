@@ -28,4 +28,8 @@ add this -
 
 "start": "nodemon app.js" in package json
 
+npm i bcryptjs
+
+npm i cookie-parser jsonwebtoken
+
 
