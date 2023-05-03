@@ -33,3 +33,34 @@ npm i bcryptjs
 npm i cookie-parser jsonwebtoken
 
 
+to run type - npm start
+
+for users table -
+
+create table users(
+id int(11) not null auto_increment,
+username varchar(100),
+email varchar(100),
+password varchar(100),
+PRIMARY KEY (id)
+);
+
+
+for booking make a new table book
+
+create table book(
+bookid int(11) not null auto_increment,
+eventName varchar(100),
+email varchar(100),
+phone varchar(20),
+bookingDate date,
+eventTimeStart time,
+eventTimeEnd time,
+hall varchar(100),
+message varchar(200),
+PRIMARY KEY (bookid)
+);
+
+
+
+

@@ -16,7 +16,7 @@ body {
 .box {
     position: relative;
     width: 380px;
-    height: 600px;
+    height: 420px;
     background: #1c1c1c;
     border-radius: 8px;
     overflow: hidden;
@@ -132,7 +132,6 @@ body {
 .links {
     display: flex;
     justify-content: space-between;
-    margin-top: 10%;
 }
 
 .links a {
@@ -146,18 +145,26 @@ body {
     color: #d2782f;
 }
 
+.message {
+    /* margin: 10px 0; */
+    margin-top: 4%;
+    /* position: absolute; */
+    /* justify-content: center; */
+    text-align: center;
+    font-size: 1em;
+    color: #d1cfcf;
+    text-decoration: none;
+}
+
+
 input[type="submit"] {
     border: none;
     outline: none;
     background: #d2782f;
     padding: 11px 25px;
     width: 300px;
+    margin-top: 10px;
     border-radius: 4px;
     font-weight: 600;
     cursor: pointer;
 }
-
-/* .home{
-    padding: auto;
-    margin-top: 100%;
-} */

@@ -3,7 +3,7 @@
 
 <head>
     <title>Login page</title>
-    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="/login.css">
 </head>
 
 <body>
@@ -12,28 +12,33 @@
         <div class="box">
             <div class="form">
                 <h2>Sign in</h2>
+                <form action="/auth/login" method="POST">
                 <div class="inputBox">
-                    <input id="username" type="text" required="required">
+                    <input id="username" type="text" required="required" name="username">
                     <span>Username</span>
                     <i></i>
                 </div>
                 <div class="inputBox">
-                    <input id="password" type="password" required="required">
+                    <input id="password" type="password" required="required" name="password">
                     <span>password</span>
                     <i></i>
                 
                 </div>
                 <div class="links">
                     <a href="#">Forgot Password</a>
-                    <a href="../signup/signup.html">SignUp</a>
+                    <a href="signup">SignUp</a>
 
                 </div>
                 <input type="submit" value="LOGIN">
-                
+                </form>
             </div>
         </div>
+         {{#if message }}
+            {{!-- <link rel="stylesheet" href="booking.css"> --}}
+            <h4 class="message">{{message}}</h4>
+        {{/if}}
     </div>
-    <script src="login.js"></script>
+    {{!-- <script src="login.js"></script> --}}
 </body>
 
 </html>

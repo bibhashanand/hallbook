@@ -3,7 +3,7 @@ const mysql2 = require("mysql2");
 const dotenv = require("dotenv");
 const path = require("path");
 
-dotenv.config({path: './.env'})
+dotenv.config({path: './.env'});
 
 const app = express();
 
@@ -37,6 +37,11 @@ db.connect( (error) => {
 //define Routes
 app.use('/', require('./routes/pages'));
 app.use('/auth', require('./routes/auth'));
+
+
+app.use((req, res) => {
+    res.status(404).sendFile(path.join(__dirname, 'views', '404.html'));
+})
 
 app.listen(5001, () => {
     console.log("Server started on port 5001");

@@ -3,7 +3,7 @@
 
 <head>
     <title>Signup page</title>
-    <link rel="stylesheet" href="signup.css">
+    <link rel="stylesheet" href="/signup.css">
 </head>
 
 <body>
@@ -40,7 +40,7 @@
     
                 <div class="links">
                     <!-- <a href="#">Reset</a> -->
-                    <a href="../login/login.html">Already have an account!</a>
+                    <a href="login">Already have an account!</a>
 
                 </div>
                 <div class="submit">
@@ -55,10 +55,11 @@
         </div>
 
         {{#if message }}
-            <h4 class="alert alert-danger mt-4">{{message}}</h4>
+            {{!-- <link rel="stylesheet" href="booking.css"> --}}
+            <h4 class="message">{{message}}</h4>
         {{/if}}
     </div>
-    <script src="signup.js"></script>
+    {{!-- <script src="signup.js"></script> --}}
 </body>
 
 </html>

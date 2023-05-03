@@ -47,7 +47,7 @@ exports.signup = (req, res) => {
             else{
                 console.log(error);
                 return res.render('signup', {
-                    message: "successfully registered"
+                    message: "Successfully registered :)"
                 });
             }
         })
@@ -56,4 +56,57 @@ exports.signup = (req, res) => {
 
 
 
+}
+
+exports.login = (req, res) => {
+    console.log(req.body);
+
+    const { username, password} = req.body;
+    
+    db.query('SELECT username FROM users WHERE username = ?',[username], async (error, results) => {
+        if(error){
+            console.log(error);
+        }
+        if(results.length >0){
+            let hashedPassword = await bcrypt.hash(password, 8);
+            console.log(password);
+            console.log(hashedPassword);
+            db.query('SELECT password FROM users WHERE password = ?',[hashedPassword], (error, results) => {
+                if(error){
+                    console.log(error);
+                }
+                else{
+
+                return res.render('login', {
+                    message: "Logged In now go to hall page for booking"
+                });
+                    }
+            })
+        }
+
+    });
+
+
+
+
+}
+
+
+exports.booking = (req, res) => {
+    console.log(req.body);
+    
+
+    const { eventName, email, phone, bookingDate, eventTimeStart, eventTimeEnd, hall, message } = req.body;
+    
+    db.query('INSERT INTO book SET ?',{eventName: eventName, email: email, phone: phone, bookingDate: bookingDate, eventTimeStart: eventTimeStart, eventTimeEnd: eventTimeEnd, hall: hall, message: message}, (error, results) => {
+            if(error) {
+                console.log(error);
+            }
+            else{
+                console.log(error);
+                return res.render('booking', {
+                    message: "Successfully booked :)"
+                });
+            }
+        })
 }

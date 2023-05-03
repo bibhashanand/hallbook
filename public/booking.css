@@ -56,5 +56,14 @@ input[type="submit"] {
 input[type="submit"]:hover {
     background-color: #952300;
 }
-
+.message {
+    /* margin: 10px 0; */
+    margin-top: 4%;
+    /* position: absolute; */
+    /* justify-content: center; */
+    text-align: center;
+    font-size: 1em;
+    color: #000000;
+    text-decoration: none;
+}
 /* test */
